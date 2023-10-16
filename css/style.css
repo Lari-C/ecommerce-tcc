@@ -6,6 +6,7 @@
     text-decoration: none;
     list-style: none;
 }
+
 html{
     font-size: 62.5%;
 }
@@ -22,6 +23,7 @@ svg{
     fill: #fff;
     color: #fff;
 }
+
 .topbar{
     padding-left: 30px;
     background-color: #000;
@@ -30,6 +32,7 @@ svg{
     display: flex;
     gap: 15px;
 }
+
 .menu{
     display: flex;
     justify-content: space-between;
@@ -137,11 +140,13 @@ h5{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto)); 
 }
+
 .meio-contato h3{
     color: #000;
     font-size: 2rem;
     margin-bottom: 1.6rem;
 }
+
 .meio-contato li a{
     display: block;
     color: #EEE1E2;
@@ -149,11 +154,20 @@ h5{
     transition: 0.35s ease;
     font-size: 1.5rem;
 }
+
 .meio-contato:hover:not(h3){
     color: #C79CA3;
     transition: 0.2s;
-    opacity: 0.9;
+    opacity: 1;
 }
+
+.meio-contato button{
+    background-color: #EEE1E2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
 footer{
     text-align: center;
     background-color: #fff;
