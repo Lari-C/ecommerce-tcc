@@ -30,12 +30,38 @@ header{
     gap: 15px;
 }
 
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: #EEE1E2;
+    padding: 1rem 3%;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+section{
+    padding-top: 7rem;
+}
+section h1{
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+}
+
 .conteudo{
     background-color: #fff;
     padding: 50px;
     max-width: 80%;
     text-align: center;
     margin: 0 auto;
+    margin-top: 100px;
     border-radius: 40px;
     box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.493);
 }
@@ -59,32 +85,50 @@ header{
     grid-template-columns: repeat(auto-fit, minmax(200px, auto)); 
 }
 
-.meio-contato h3{
+.contato h3{
     color: #000;
     font-size: 2rem;
     margin-bottom: 1.6rem;
 }
 
-.meio-contato li a{
+.meio-contato li{
     display: block;
     color: #EEE1E2;
     font-weight: 600;
-    transition: 0.35s ease;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.meio-contato p{
+    color: #EEE1E2;
     font-size: 1.5rem;
 }
 
-.meio-contato:hover:not(h3){
+.meio-contato a{
+    color: #EEE1E2;
+    font-size: 1.5rem;
+}
+
+.meio-contato:hover a{
     color: #C79CA3;
     transition: 0.2s;
     opacity: 1;
 }
 
-.meio-contato button{
+.btn-footer{
     background-color: #EEE1E2;
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    cursor: pointer;
 }
+
+.btn-footer:hover{
+    background-color: #C79CA3;
+    transition: 0.2s;
+    opacity: 1;
+}
+
 
 footer{
     text-align: center;
