@@ -46,6 +46,17 @@ nav ul li a{
     color: #fff;
     text-align: center;
 }
+<<<<<<< HEAD
+=======
+section{
+    padding-top: 7rem;
+}
+section h1{
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+}
+>>>>>>> 742063a77ca044271585883f01009f78f83af955
 
 .conteudo{
     background-color: #fff;
@@ -53,6 +64,7 @@ nav ul li a{
     max-width: 80%;
     text-align: center;
     margin: 0 auto;
+    margin-top: 100px;
     border-radius: 40px;
     box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.493);
 }
@@ -76,39 +88,59 @@ nav ul li a{
     grid-template-columns: repeat(auto-fit, minmax(200px, auto)); 
 }
 
-.meio-contato h3{
+.contato h3{
     color: #000;
     font-size: 2rem;
     margin-bottom: 1.6rem;
 }
 
-.meio-contato li a{
+.meio-contato li{
     display: block;
     color: #EEE1E2;
     font-weight: 600;
-    transition: 0.35s ease;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.meio-contato p{
+    color: #EEE1E2;
     font-size: 1.5rem;
 }
 
-.meio-contato:hover:not(h3){
+.meio-contato a{
+    color: #EEE1E2;
+    font-size: 1.5rem;
+}
+
+.meio-contato:hover a{
     color: #C79CA3;
     transition: 0.2s;
     opacity: 1;
 }
 
-.meio-contato button{
+.btn-footer{
     background-color: #EEE1E2;
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
+<<<<<<< HEAD
 .meio-contato button:hover{
     color: #C79CA3;
+=======
+.btn-footer:hover{
+    background-color: #C79CA3;
+>>>>>>> 742063a77ca044271585883f01009f78f83af955
     transition: 0.2s;
     opacity: 1;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 742063a77ca044271585883f01009f78f83af955
 footer{
     text-align: center;
     background-color: #fff;

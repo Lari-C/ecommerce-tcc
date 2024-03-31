@@ -16,5 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     btnMobile.addEventListener('click', toggleMenu);
     btnMobile.addEventListener('touchstart', toggleMenu);
+<<<<<<< HEAD
 });
 
+=======
+});
+>>>>>>> 742063a77ca044271585883f01009f78f83af955

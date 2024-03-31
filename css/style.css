@@ -10,6 +10,11 @@ button{
     color: #fff;
 }
 
+button{
+    padding: .5rem;
+    color: #fff;
+}
+
 html{
     font-size: 62.5%;
 }
@@ -45,6 +50,7 @@ header{
     gap: 1.2rem;
 } 
 
+<<<<<<< HEAD
 section{
     padding-top: 7rem;
 }
@@ -117,6 +123,8 @@ svg{
     display: none;
 }
 
+=======
+>>>>>>> 742063a77ca044271585883f01009f78f83af955
 section{
     padding-top: 7rem;
 }
@@ -125,7 +133,46 @@ section h1{
     align-items: center;
     text-align: center;
     font-size: 3rem;
+<<<<<<< HEAD
     font-weight: bold;
+=======
+}
+
+svg{    
+    fill: #fff;
+    color: #fff;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+a:hover{
+    color: #C79CA3;
+}
+
+#menu a{
+    display: block;
+    padding: .5rem;
+    list-style: none;
+    color: #fff;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+section{
+    padding-top: 7rem;
+}
+
+section h1{
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+>>>>>>> 742063a77ca044271585883f01009f78f83af955
 }
 
 #whats{
@@ -268,11 +315,18 @@ footer{
         margin-right: 0.62rem;
     }
 
+<<<<<<< HEAD
 
     #menu{
         display: block;
         position: absolute;
         width: 100%;
+=======
+    #menu{
+        display: block;
+        position: absolute;
+        width: 70%;
+>>>>>>> 742063a77ca044271585883f01009f78f83af955
         top: 14rem;
         right: 0px;
         background-color: #EEE1E2;
@@ -283,6 +337,7 @@ footer{
         overflow-y: hidden;
     }
 
+<<<<<<< HEAD
     #nav ul li{
         display: block;
         position: relative;
@@ -307,11 +362,16 @@ footer{
 
     #nav.active #menu{
         height: 100%;
+=======
+    #nav.active #menu{
+        height: calc(100vh - 70px);
+>>>>>>> 742063a77ca044271585883f01009f78f83af955
         visibility: visible;
         overflow-y: auto;
     }
 
     #menu a {
+<<<<<<< HEAD
         padding: 1.5rem;
         margin: 0;
         border-bottom: 2px solid rgba(255, 255, 255, .5);
@@ -339,6 +399,11 @@ footer{
 
     #menu.active + #overlay{
         display: block;
+=======
+        padding: 1rem;
+        margin: 1rem;
+        border-bottom: 2px solid rgba(255, 255, 255, .5);
+>>>>>>> 742063a77ca044271585883f01009f78f83af955
     }
 
     #btn-mobile{
@@ -380,4 +445,8 @@ footer{
 
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 742063a77ca044271585883f01009f78f83af955
 }
