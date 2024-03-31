@@ -30,6 +30,23 @@ header{
     gap: 15px;
 }
 
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: #EEE1E2;
+    padding: 1rem 3%;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
 .conteudo{
     background-color: #fff;
     padding: 50px;
@@ -84,6 +101,12 @@ header{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+.meio-contato button:hover{
+    color: #C79CA3;
+    transition: 0.2s;
+    opacity: 1;
 }
 
 footer{
