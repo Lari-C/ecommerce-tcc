@@ -29,7 +29,7 @@ header{
     width: 100%;
     text-align: left;
     display: flex;
-    background-color: #EEE1E2;
+    background-color: #ac7175;
     gap: 1.2rem;
     align-items: center;
     padding: 2.5rem;
@@ -73,7 +73,7 @@ svg{
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #EEE1E2;
+    background-color: #ac7175;
     z-index: 1000;
     width: 100%;
 }
@@ -86,6 +86,8 @@ svg{
     all: unset;
     display: flex;
     position: relative;
+    z-index: 1000;
+    background-color: #ac7175;
 }
 
 #nav ul li a:hover{
@@ -95,8 +97,10 @@ svg{
 #nav ul li ul{
     position: absolute;
     top: 3rem;
-    background: #EEE1E2;
+    background: #ac7175;
     display: none;
+    left: 0;
+    padding-right: 2rem;
 }
 
 #nav ul li ul li{
@@ -117,15 +121,62 @@ svg{
     display: none;
 }
 
-section{
-    padding-top: 7rem;
-}
 
 section h1{
-    align-items: center;
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 3rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.card{
+    border-radius: 12px;
+    border: 1px solid #c3c3c3;
+    align-items: center;
+    color: #000;
+    padding-bottom: 1rem;
+}
+
+.card img{
+    height: 200px;
+    width: 200px;
+}
+
+.card .sep{
+    color: #ac7175;
+    width: 100%;
+    border-top: 0.1rem solid;
+    padding: 1rem;
+}
+
+.card h3{
+    font-size: 2rem;
+}
+
+.card h4{
+    font-size: 2rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    color: #ac7175;
+}
+
+.card button{
+    background-color: #ac7175;
+    width: 40%;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.card button:hover{
+    background-color: #C79CA3;
+    transition: all 0.2s;
 }
 
 #whats{
@@ -160,7 +211,7 @@ h5{
 
 .barra{
     display: flex;
-    background-color: #EEE1E2;
+    background-color: #ac7175;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -185,7 +236,7 @@ h5{
 
 .btn-siganos:hover{
     background-color: #fff;
-    color: #EEE1E2;
+    color: #ac7175;
 }
 
 .contato{
@@ -206,19 +257,19 @@ h5{
 
 .meio-contato li{
     display: block;
-    color: #EEE1E2;
+    color: #ac7175;
     font-weight: 600;
     font-size: 1.5rem;
     text-decoration: none;
 }
 
 .meio-contato p{
-    color: #EEE1E2;
+    color: #ac7175;
     font-size: 1.5rem;
 }
 
 .meio-contato a{
-    color: #EEE1E2;
+    color: #ac7175;
     font-size: 1.5rem;
 }
 
@@ -229,7 +280,7 @@ h5{
 }
 
 .btn-footer{
-    background-color: #EEE1E2;
+    background-color: #ac7175;
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
@@ -275,7 +326,7 @@ footer{
         width: 100%;
         top: 14rem;
         right: 0px;
-        background-color: #EEE1E2;
+        background-color: #ac7175;
         z-index: 1000;
         transition: .6s;
         height: 0px;
@@ -298,7 +349,7 @@ footer{
         position: relative;
         display: flex;
         width: 100%;
-        background-color: #EEE1E2;
+        background-color: #ac7175;
     }
 
     #nav ul li ul li ul{
@@ -378,6 +429,39 @@ footer{
         transform: rotate(-135deg);
         top: -7px;
 
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 3rem;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .card img{
+        height: 150px;
+        width: 150px;
+        border-radius: 20px;
+    }
+    
+    .card h3{
+        font-size: 1.2rem;
+    }
+    
+    .card h4{
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        font-weight: bold;
+        color: #ac7175;
+    }
+    
+    .card button{
+        background-color: #ac7175;
+        width: 40%;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 0.8rem;
     }
 
 }
