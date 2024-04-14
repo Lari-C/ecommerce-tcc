@@ -1,0 +1,40 @@
+
+.container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 600px 200px;
+    font-size: 1.8rem;
+}
+
+.div-image{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.div-image img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div-text{
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.div-obs{
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+}
+
+.div-text button{
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
