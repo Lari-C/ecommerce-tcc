@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="/frontend/css/menu.css">
+
 <section>
     <section id="topbar">
         <a href="https://www.instagram.com/berlocariaetc/" target="_blank"><i class="fa-brands fa-instagram"
@@ -15,7 +17,7 @@
             </button>
             <ul id="menu" role="menu">
                 <li><a href="/frontend/index.html">Home</a></li>
-                <li><a href="#">Berloques <i class="fa-solid fa-arrow-down"></i></a>
+                <li><a href="#">Berloques <i class="fa-solid fa-angle-up fa-flip-vertical" style="color: #ffffff;"></i></a>
                     <ul>
                         <li><a href="/">Amor</a></li>
                         <li><a href="/">Disney</a></li>
@@ -24,13 +26,20 @@
                         <li><a href="/">Viagem</a></li>
                     </ul>
                 </li>
-                <li><a href="/">Pulseiras</a></li>
-                <li><a href="/">Travas</a></li>
-                <li><a href="/">Atendimento</a></li>
-                <li><a href="/">Minha conta</a></li>
+                <li><a href="/frontend/pages/pulseiras.html">Pulseiras</a></li>
+                <li id="opcao">Atendimento
+                    <ul>
+                        <li style="font-size: 1.5rem; display: flex; justify-content: center; align-items: center;"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i><a href="https://api.whatsapp.com/send/?phone=5519981182803&text&type=phone_number&app_absent=0">5519981182803</a></li>
+                        <li style="font-size: 1.5rem; display: flex; justify-content: center; align-items: center;"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i><a href="https://api.whatsapp.com/send/?phone=5519981820119&text&type=phone_number&app_absent=0">5519981820119</a></li>
+                    </ul>
+                </li>
+                <li id="opcao">Minha conta
+                    <ul>
+                        <li style="font-size: 1.5rem"><a href="/frontend/pages/cadastro.html">Criar uma conta</a></li>
+                        <li style="font-size: 1.5rem;"><a href="/frontend/pages/login.html">Iniciar sessão</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </section>
 </section>
-
-<script src="/frontend/js/header.js"></script>

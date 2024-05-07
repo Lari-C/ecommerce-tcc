@@ -1,0 +1,66 @@
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 1.2rem;
+    box-sizing: border-box;
+}
+
+.button-container {
+    text-align: center;
+}
+
+button{
+    font-family: 'Open Sans';
+    font-size: 1.3rem;
+    background-color: #ac7175;
+    width: 47%;
+    height: 4rem;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 3rem;
+}
+
+button:hover{
+    background-color: #C79CA3;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.session-login{
+    margin: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 1.7rem;
+    gap: .3rem;
+}
+
+.session-login p{
+    font-family: 'Open Sans';
+}
+
+.session-login a{
+    color: #ac7175;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}

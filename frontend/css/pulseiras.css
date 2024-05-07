@@ -17,6 +17,8 @@
     height: 600px;
     width: 600px;
     border-radius: 2rem;
+    object-fit: cover;
+    object-position: center;
 }
 
 .div-text{
@@ -44,17 +46,17 @@
     font-family: "Open Sans", sans-serif;   
 }
 
-input{
+select{
     font-size: 20px;
     padding: 1rem 2rem 1rem 2rem;
     border: 1px solid;
     border-radius: 1.5rem;
-    width: 8rem;
+    width: 12rem;
 }
 
 input[type=number]::-webkit-inner-spin-button { 
     all: unset; 
-    min-width: 21px;
+    min-width: 30px;
     min-height: 45px;
     margin: 17px;
     background-image: 

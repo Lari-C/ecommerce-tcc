@@ -1,0 +1,233 @@
+.header{
+    box-sizing: border-box;
+    height: 11rem;
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    background-color: #ac7175;
+    gap: 1.2rem;
+    align-items: center;
+    padding: 2.5rem;
+    justify-content: space-between;
+}
+
+#topbar{
+    padding-left: 1.9rem;
+    background-color: #000;
+    padding-top: 0.5rem;
+    padding-bottom: 0.3rem;
+    display: flex;
+    gap: 1.2rem;
+} 
+
+svg{    
+    fill: #fff;
+    color: #fff;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a{
+    display: block;
+    padding: .5rem;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #ac7175;
+    z-index: 1000;
+    width: 100%;
+}
+
+#menu a:hover{
+    color: #C79CA3;
+}
+
+#nav ul li{
+    all: unset;
+    display: flex;
+    position: relative;
+    z-index: 1000;
+    background-color: #ac7175;
+}
+
+#nav ul li a:hover{
+    color: #C79CA3;
+}
+
+#nav ul li ul{
+    position: absolute;
+    top: 3rem;
+    background: #ac7175;
+    display: none;
+    padding: 0;
+    border: solid 1rem #ac7175;
+    box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+#nav ul li ul li{
+    width: 100%;
+    padding: 0;
+}
+
+#nav ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+
+#nav ul li:focus-within > ul,
+#nav ul li:hover > ul{
+    display: initial;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+#menu #opcao{
+    color: #ffffff; 
+    cursor: pointer; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: .5rem;
+}
+
+#menu #opcao ul{
+    width: 17rem;
+}
+
+@media(min-width: 280px) and (max-width: 820px){
+
+    #nav.active #menu{
+        height: 100%;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 99;
+        display: none;
+    }
+
+    #menu.active + #overlay{
+        display: block;
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        background: none;
+        cursor: pointer;
+        gap: 1rem;
+
+    }
+
+    #hamburger {
+        color: #fff;
+        width: 2rem;
+        border-top: 2px solid;
+    }
+
+    #hamburger::after, #hamburger::before {
+        content: '';
+        display: block;
+        width: 2rem;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .6s;
+        position: relative;
+    }
+
+    #nav.active #hamburger{
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+
+    }
+
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 14rem;
+        right: 0px;
+        background-color: #ac7175;
+        z-index: 1000;
+        transition: .6s;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav ul li{
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+    
+    #nav ul li ul {
+        position: static;
+        width: 100%;
+    }
+
+    #nav ul li ul li{
+        position: relative;
+        display: flex;
+        width: 100%;
+        background-color: #ac7175;
+        
+    }
+
+    #nav ul li ul li ul{
+        width: 100%;
+    }
+
+    #menu a {
+        padding: 1.5rem;
+        margin: 0;
+        border-bottom: 2px solid rgba(255, 255, 255, .5);
+        width: 90%;
+    }
+
+    #menu ul ul{
+        top: 0;
+    }
+
+    #menu #opcao{
+        display: block;
+        padding: 1.5rem;
+        margin: 0;
+        border-bottom: 2px solid rgba(255, 255, 255, .5);
+        width: 82%;
+    }
+
+    #menu #opcao a{
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+}
