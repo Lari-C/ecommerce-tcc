@@ -1,13 +1,17 @@
 const repository = require('../repository/produto');
 
+const {sql} = require('@vercel/postgres');
+
 const get = ((req, res) =>{
-    repository.getAll((err, rows) =>{
-        if(err){
-            res.status(500).json(err.message); 
-        }else{
-            rows.length != 0 ? res.status(200).json(rows) : res.status(204).json(rows)
-        }
-    });
+    const result = sql`SELECT * FROM tb_produto;`;
+    res.status(200).json({result})
+//    repository.getAll((err, rows) =>{
+//        if(err){
+//            res.status(500).json(err.message); 
+//        }else{
+//            rows.length != 0 ? res.status(200).json(rows) : res.status(204).json(rows)
+//        }
+//    });
 });
 
 const getById = ((req, res) =>{
