@@ -3,6 +3,7 @@
 const {sql} = require('@vercel/postgres');
 
 async function getAll() {
+    console.log("teste");
     result = await sql`SELECT * FROM tb_produto;`;
     console.log(result)
     return result;
