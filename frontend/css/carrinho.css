@@ -1,0 +1,82 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#cart-items > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-element, .increment-btn, .decrement-btn, .remove-btn {
+    margin-right: 10px;
+}
+
+.increment-btn, .decrement-btn {
+    color: #000;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 2rem;
+    background: none;
+    transition: color 0.3s ease;
+}
+
+.item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+#total {
+    text-align: right;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+}
+
+.btn-carrinho{
+    font-family: 'Open Sans';
+    font-size: 1.2rem;
+    background-color: #ac7175;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 1rem;
+}
+
+.btn-carrinho:hover{
+    background-color: #C79CA3;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.btn-finalizar {
+    font-size: 1.2rem;
+    font-family: 'Open Sans';
+    background-color: #28a745;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 1rem;
+}
+
+.btn-finalizar:hover {
+    background-color: #218838;
+}
