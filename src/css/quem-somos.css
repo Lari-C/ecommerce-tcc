@@ -1,0 +1,167 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: #EEE1E2;
+}
+
+header{
+    font-size: 1.8rem;
+    position: fixed;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar{
+    padding-left: 30px;
+    background-color: #000;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    display: flex;
+    gap: 15px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: #EEE1E2;
+    padding: 1rem 3%;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+<<<<<<< HEAD
+=======
+section{
+    padding-top: 7rem;
+}
+section h1{
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+}
+>>>>>>> 742063a77ca044271585883f01009f78f83af955
+
+.conteudo{
+    background-color: #fff;
+    padding: 50px;
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 40px;
+    box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.493);
+}
+
+.conteudo p{
+    font-size: 2rem;
+}
+
+.conteudo h3{
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+.contato{
+    display: flex;
+    gap: 5rem;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto)); 
+}
+
+.contato h3{
+    color: #000;
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+}
+
+.meio-contato li{
+    display: block;
+    color: #EEE1E2;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.meio-contato p{
+    color: #EEE1E2;
+    font-size: 1.5rem;
+}
+
+.meio-contato a{
+    color: #EEE1E2;
+    font-size: 1.5rem;
+}
+
+.meio-contato:hover a{
+    color: #C79CA3;
+    transition: 0.2s;
+    opacity: 1;
+}
+
+.btn-footer{
+    background-color: #EEE1E2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+<<<<<<< HEAD
+.meio-contato button:hover{
+    color: #C79CA3;
+=======
+.btn-footer:hover{
+    background-color: #C79CA3;
+>>>>>>> 742063a77ca044271585883f01009f78f83af955
+    transition: 0.2s;
+    opacity: 1;
+}
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> 742063a77ca044271585883f01009f78f83af955
+footer{
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+@media(min-width: 280px) and (max-width: 820px){
+    .conteudo{
+        max-width: 80%;
+        padding: 20px;
+    }
+
+    .conteudo p{
+        font-size: 1.7rem;
+    }
+
+    .conteudo h3{
+        font-size: 2rem;
+    }
+
+}
+
