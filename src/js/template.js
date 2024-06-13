@@ -3,7 +3,7 @@ export default class Template {
         return` 
         <a href="/src/pages/detalhes.html?id=${data.id}">
             <div class="card">
-                <img src="/src/img/img_card/${data.card_img}.jpg">
+                <img src="/img/img_card/${data.card_img}.jpg">
                 <span class="sep"></span>
                 <h3>${data.nome}</h3>
                 <h4>R$ ${data.preco.toFixed(2)}</h4>
