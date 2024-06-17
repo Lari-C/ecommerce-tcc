@@ -1,0 +1,90 @@
+*{
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    font-family: 'Open Sans';
+    padding-top: 3rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    font-size: 1.6rem;
+    justify-content: center;
+}
+
+.carrinho-tabela {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.carrinho-img {
+    width: 100px;
+}
+
+.produto-preco{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produto-qtd-input {
+    font-size: 3rem;
+    padding: 1rem 2rem 1rem 2rem;
+    border: 1px solid;
+    border-radius: 1.5rem;
+    width: 8rem;
+}
+
+.remover{
+    font-family: 'Open Sans';
+    font-size: 1.3rem;
+    background-color: hsl(0, 82%, 57%);
+    width: 20%;
+    height: 4rem;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    all: unset; 
+    min-width: 21px;
+    min-height: 45px;
+    margin: 17px;
+    background-image: 
+    linear-gradient(to top, transparent 0px, transparent 16px, #fff 16px, #fff 26px, transparent 26px, transparent 35px, #000 35px,#000 36px,transparent 36px, transparent 40px),
+    linear-gradient(to right, transparent 0px, transparent 10px, #000 10px, #000 11px, transparent 11px, transparent 21px);
+    transform: rotate(90deg) scale(0.8, 0.9);
+    cursor: pointer;
+}
+
+.remover:hover {
+    filter: brightness(0.8);
+}
+
+.total {
+    border-top: 1px solid var(--gray);
+    text-align: end;
+    padding: 6px 16px 0 0;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.finalizar {
+    font-family: 'Open Sans';
+    font-size: 1.3rem;
+    background-color: hsl(106, 93%, 18%);
+    width: 50%;
+    height: 4rem;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
