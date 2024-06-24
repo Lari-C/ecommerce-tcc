@@ -3,10 +3,10 @@ import Notificacao from "../classes/notificacao.js";
 import Cart from "../classes/carrinho.js";
 
 const tbody = document.getElementById('tbody');
-const tbodyCarrinho = document.getElementById('tbody-carrinho');
 const form = document.getElementById('endereco-form');
+const tbodyCarrinho = document.getElementById('tbody-carrinho');
+const novoEnderecoBtn = document.getElementById('novo-endereco');
 const enderecosCadastrados = document.getElementById('enderecos-cadastrados');
-
 let total = document.getElementById("total-count");
 
 addEventListener("DOMContentLoaded", () => {
@@ -15,13 +15,12 @@ addEventListener("DOMContentLoaded", () => {
 })
 
 function loadEnderecos(){
-    enderecosCadastrados.classList.add("d-none");
-    form.classList.remove("d-none");
     tbody.innerHTML = "";
     new Request(`/endereco/${Cookies.get('userId')}`, (endereco)=>{
-        form.classList.add("d-none");
-        enderecosCadastrados.classList.remove("d-none");
         if(endereco){
+            form.classList.add("d-none");
+            novoEnderecoBtn.classList.remove("d-none");
+            enderecosCadastrados.classList.remove("d-none");
             tbody.innerHTML += `
                 <tr data-id="${endereco.id}">
                     <td class="text-center align-middle">
@@ -44,10 +43,15 @@ function loadEnderecos(){
                     </td>
                 </tr>
             `
+            setTimeout(() => {
+                setup(endereco.id);
+            }, "500");
         }
-        setTimeout(() => {
-            setup(endereco.id);
-        }, "500");
+        else{
+            form.classList.remove("d-none");
+            novoEnderecoBtn.classList.add("d-none");
+            enderecosCadastrados.classList.add("d-none");
+        }
     }).get();
 }
 
@@ -155,6 +159,7 @@ function calcularFrete(cep){
 }
 
 document.getElementById('novo-endereco').addEventListener('click', ()=>{
+    novoEnderecoBtn.classList.add("d-none");
     form.classList.remove("d-none");
 })
 
@@ -176,4 +181,5 @@ form.addEventListener('submit', e => {
             loadEnderecos();
         }
     }).post(formJson);
+    form.classList.add("d-none");
 });
