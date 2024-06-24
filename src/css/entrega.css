@@ -1,6 +1,7 @@
 .form-container {
     width: 40%;
     margin: 0 auto;
+    font-size: 1.6rem;
 }
 
 .form-group {
@@ -28,14 +29,32 @@
 
 button{
     font-family: 'Open Sans';
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     background-color: hsl(106, 93%, 18%);
-    width: 50%;
-    height: 4rem;
-    border-radius: 3rem;
+    width: 22rem;
+    padding: .5rem;
+    border-radius: 1.2rem;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
+}
+
+.novo-endereco{
+    font-family: 'Open Sans';
+    font-size: 1.2rem;
+    background-color: hsl(219, 86%, 34%);
+    width: 22rem;
+    padding: .5rem;
+    border-radius: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.novo-endereco:hover{
+    background-color: hsl(219, 59%, 48%);
+    transition: 0.3s;
+    opacity: 1;
 }
 
 button:hover{

@@ -94,7 +94,7 @@ svg{
     display: none;
 }
 
-#menu #opcao{
+#menu .opcao{
     color: #ffffff; 
     cursor: pointer; 
     display: flex; 
@@ -103,7 +103,7 @@ svg{
     padding: .5rem;
 }
 
-#menu #opcao ul{
+#menu .opcao ul{
     width: 17rem;
 }
 
@@ -218,7 +218,7 @@ svg{
         top: 0;
     }
 
-    #menu #opcao{
+    #menu .opcao{
         display: block;
         padding: 1.5rem;
         margin: 0;
@@ -226,8 +226,23 @@ svg{
         width: 82%;
     }
 
-    #menu #opcao a{
+    #menu .opcao a{
         border-bottom: 0;
         padding-bottom: 0;
     }
+}
+
+.icon-cart span{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 1.2rem;
+    top: 50%;
+    right: -2px;
 }

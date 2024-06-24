@@ -1,12 +1,15 @@
+*, ::after, ::before {
+    box-sizing: content-box;
+}
 
-.container{
+.container-detalhes{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
     display: grid;
     grid-template-columns: 70% 30%;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     padding-top: 5rem;
 }
 
@@ -37,6 +40,7 @@
     flex-direction: row; 
     align-items: center;
     gap: .5rem;
+    height: 4rem;
 }
 
 .div-info h1{
@@ -45,11 +49,11 @@
 }
 
 input{
-    font-size: 20px;
-    padding: 1rem 2rem 1rem 2rem;
+    font-size: 1.5rem; 
+    padding: .5rem 2rem .5rem 2rem;
     border: 1px solid;
     border-radius: 1.5rem;
-    width: 8rem;
+    width: 10rem;
 }
 
 input[type=number]::-webkit-inner-spin-button { 
@@ -66,9 +70,9 @@ input[type=number]::-webkit-inner-spin-button {
 
 .btn-comprar button{
     background-color: #219031;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     width: 22rem; 
-    height: 4rem;
+    height: 3rem;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -92,9 +96,9 @@ input[type=number]::-webkit-inner-spin-button {
 
 .btn-frete{
     width: 17rem; 
-    height: 4rem; 
+    height: 3rem; 
     background-color: #ac7175;
-    border-radius: 25px;
+    border-radius: 1.5rem;
     padding: .5rem;
     text-transform: uppercase;
     cursor: pointer;
@@ -113,14 +117,14 @@ input[type=number]::-webkit-inner-spin-button {
         width: 300px;
     }
 
-    .container{
+    .container-detalhes{
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 90%;
         display: grid;
         grid-template-columns: 1fr;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         padding-top: 5rem;
     }
 

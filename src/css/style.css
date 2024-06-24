@@ -192,3 +192,91 @@ h5{
     }
 
 }
+
+.toast-notifications{
+    position: fixed;
+    top: 150px;
+    right: 20px;
+}
+
+.toast-div{
+    position: relative;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 70px 1fr 70px;
+    border-radius: 5px;
+    --color: #0abf30;
+    background-image: linear-gradient(to right, #0abf3055, #22242f 30%);
+    animation: show 0.3s ease 1 forwards;
+}
+
+.toast-div i{
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.toast-div .toast-title{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+
+.toast-div span, .toast-div i:nth-child(3){
+    color: #fff;
+    opacity: 0.6;
+    font-size: 1.4rem;
+}
+
+@keyframes show{
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(-5%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10%);
+    }
+}
+
+.toast-div::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color);
+    width: 100%;
+    height: 3px;
+    content: '';
+    box-shadow: 0 0 10px var(--color);
+    animation: timeOut 10s linear 1 forwards;
+}
+
+@keyframes timeOut{
+    to{
+        width: 0;
+    }
+}
+
+.toast-div.toast-error{
+    --color: #f24d4c;
+    background-image: linear-gradient(to right, #f24d4c55, #22242f 30%);
+}
+
+.toast-div.toast-warning{
+    --color: #e9bd0c;
+    background-image: linear-gradient(to right, #e9bd0c55, #22242f 30%);
+}
+
+.toast-div.toast-info{
+    --color: #3498db;
+    background-image: linear-gradient(to right, #3498db55, #22242f 30%);
+}

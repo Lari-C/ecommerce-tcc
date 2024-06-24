@@ -13,10 +13,7 @@ export default class Template {
     }
 
     categoriasList(data){
-        let html = '';
-        data.forEach(categoria => {
-            html += `<li><a href="/pages/categorias.html?id=${categoria.id}">${categoria.nome}</a></li>`
-        });
+        const html = `<li><a href="/pages/categorias.html?id=${data.id}">${data.nome}</a></li>`
         return html;
     }
 }
