@@ -3,6 +3,7 @@ import Notificacao from "../classes/notificacao.js";
 import Cart from "../classes/carrinho.js";
 
 const tbody = document.getElementById('tbody');
+const prazos = document.getElementById('prazos');
 const form = document.getElementById('endereco-form');
 const tbodyCarrinho = document.getElementById('tbody-carrinho');
 const novoEnderecoBtn = document.getElementById('novo-endereco');
@@ -16,6 +17,7 @@ addEventListener("DOMContentLoaded", () => {
 
 function loadEnderecos(){
     tbody.innerHTML = "";
+    prazos.innerHTML = "";
     new Request(`/endereco/${Cookies.get('userId')}`, (endereco)=>{
         if(endereco){
             form.classList.add("d-none");
@@ -118,11 +120,11 @@ function calcularFrete(cep){
     });
 
     new Request(`/calcula-frete`, (res) =>{
-        document.getElementById('prazos').innerHTML = `
+        prazos.innerHTML = `
             <span>Carregando...</span>
         `;
         res.json().then(data => {
-            document.getElementById('prazos').innerHTML =`
+            prazos.innerHTML =`
                 <table class="prazo-tabela table">
                     <thead>
                         <tr style="text-align: center;">
