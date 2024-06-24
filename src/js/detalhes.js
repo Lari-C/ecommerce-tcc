@@ -69,11 +69,11 @@ addEventListener("load", () => {
                     `;
                 });
             });
-        }).post({
+        }).post([{
             "id": id,
             "qtd": document.getElementById('quantidade').value,
             "cep": document.getElementById('cep').value
-        });
+        }]);
     });
 });
 
