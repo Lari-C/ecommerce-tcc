@@ -15,7 +15,8 @@ addEventListener("DOMContentLoaded", () => {
 })
 
 function loadEnderecos(){
-    enderecosCadastrados.classList.add("d-none")
+    enderecosCadastrados.classList.add("d-none");
+    form.classList.remove("d-none");
     tbody.innerHTML = "";
     new Request(`/endereco/${Cookies.get('userId')}`, (endereco)=>{
         form.classList.add("d-none");
