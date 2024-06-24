@@ -1,7 +1,7 @@
 export default class RequestAPI {
     constructor(endPoint, callback) {
-        //this.BERLOCARIA_API_URL = "https://ecommerce-tcc-api-production.up.railway.app"
-        this.BERLOCARIA_API_URL = "http://localhost:26399"
+        this.BERLOCARIA_API_URL = "https://ecommerce-tcc-api-production.up.railway.app"
+        //this.BERLOCARIA_API_URL = "http://localhost:26399"
         this.callback = callback;
         this.endPoint = endPoint;
     }
