@@ -1,5 +1,6 @@
 import Request from "../classes/request.js";
 import Cart from "../classes/carrinho.js";
+import Notificacao from "../classes/notificacao.js";
 
 const params = new URLSearchParams(window.location.search);
 const id = params.get('id');
@@ -26,6 +27,7 @@ addEventListener("load", () => {
                 qtd: document.getElementById('quantidade').value,
             };
             new Cart().addToCart(newProduct);
+            new Notificacao().sucesso("Item adiciona ao carrinho.")
         });
         document.getElementById('quantidade').addEventListener('change', (el) => {
             if(document.getElementById('quantidade').value > produto.estoque){
